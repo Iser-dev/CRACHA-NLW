@@ -1,0 +1,84 @@
+<!--
+  HTML
+  HYPERTEXT
+  texto com link (img, video, coisas...)
+  MARKUP
+  marcacao (TAG)
+  LANGUAGE
+  regras da linguagem
+  cascata
+  especificidade <>, id, class, element
+  clippy css.com - estilização formas geometricas
+  lorempixel.com.br - imagens br aleatorias
+  
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" id="icon_image" href="images/imgthiago.jpg"/>
+    <!--relacao de icone na guia -->
+    <title>THIAGO ISER - DoWhile 2021</title>
+    <!--titulo da aguia -->
+    <link rel="stylesheet" href="style.css" />
+    <!--relacao de estilizacao css -->
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!--usado como organizador visual -->
+        <div class="avatar">
+          <span>
+            <img src="images/selo.svg" alt="Selo Rocketseat" />
+            <!--usado para adicao de camada z -->
+          </span>
+          <img id="img_pessoal" src="images/imgthiago.jpg" alt="Foto Pessoal" />
+          <!-- insercao de imagem-->
+        </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <!-- conexao com o google para obter fonte externa (crossorigin usado para permitir troca de dados dos servidores)-->
+        <h1 id="user_name">THIAGO ISER</h1>
+        <!-- titulo principal-->
+        <a id="link_github" href="https://github.com/Iser-dev" target="_blank">
+          <img src="images/github.svg" alt="icongithub" />
+         <span id="name_github">ThiagoIser</span> </a
+        >
+        <!-- imagem dentro do link-->
+        <p id="user_bio"> A dev focused on specialization programming for web</p>
+        <!-- paragrafo-->
+        <ul id="social_links">
+          <li class="youtube">
+            <a
+               href="https://www.youtube.com/chapeusdepalha"
+              target="_blank"
+            >
+              <img src="images/youtube.svg" alt="iconeyoutube" />
+            </a>
+          </li>
+          <li class="instagram">
+            <a  href="https://www.instagram.com/onepiecebrasil" target="_blank"
+              ><img src="images/instagram.svg" alt="iconeinstagram"
+            /></a>
+          </li>
+          <li class="facebook">
+            <a  href="https://www.facebook.com/onepiecebrasil" target="_blank"
+              ><img src="images/facebook.svg" alt="iconeyoutube"
+            /></a>
+          </li>
+          <li class="twitter">
+            <a  href="https://www.twitter.com/@onepiecebrasil" target="_blank">
+              <img src="images/twitter.svg" alt="iconeyoutube"
+            /></a>
+          </li>
+        </ul>
+        <!--lista composta de img e link -->
+      </div>
+    </main>
+    <script src="main.js">
+    </script>
+  </body>
+</html>

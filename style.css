@@ -1,0 +1,96 @@
+*{margin: 0%;}
+/* *usado como universal*/
+html,body{
+  height: 100%;
+  /* altura*/
+font-family: 'Roboto', sans-serif;
+/* mudanca de fonte*/
+-webkit-font-smoothing: antialiased;
+/* webkit browser como chrome e mozila a mudanca so funciona neles, cod restringi a isso para evitar erro*/
+--grey:rgba(225, 225, 230, 1);
+/* variavel cor*/
+--black: rgb(0, 0, 0);
+}
+body{
+  display: grid;  
+  /* criacao de um corpo escalavel*/
+  place-items: center;
+  /* centralizacao*/
+ 
+}
+main{
+  background: url(images/fundo.svg);
+  /* atribuicao imagem de fundo*/
+  width:375px;
+  /* largura*/
+  height:800px;
+  /* altura*/
+}
+.container{
+  max-width: 250px;
+  /* maxima largura*/
+  margin-left: auto;
+  /* margem esquerda*/
+  margin-right: auto;
+  /*margin direita */
+  text-align: center;
+  /* centralizacao de texto*/
+  color: var(--grey);
+  /* atribuicao de color*/
+}
+.avatar{
+  width: 10rem;
+  /* largura*/
+  margin: 11.5rem auto 0;
+  /*margem*/
+  position: relative;
+  /*posicao referente a avatar e nao do site */
+}
+.avatar span{
+  position: absolute;
+  /* posicao referente ao site*/
+  top: -15px;
+  z-index: 1;
+  /*posicao eixo z */
+}
+.avatar > img{
+  /* > pega img do primeiro nivel*/
+  width: 10rem;
+  /* largura*/
+  height: 11.5rem;
+  /* altura*/
+  object-fit: cover;
+  /* adaptacao da img as novas proporcoes*/
+  clip-path: polygon(50% 0, 100% 25%, 100% 76%, 50% 100%, 0 75%, 0 25%);
+  /* formatacao de forma geometrica da imagem*/
+}
+h1{
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+  margin-top: 0.25rem;
+  display: flex;
+  /* alinha os elementos um ao lado do outro*/
+  gap: 0.75rem;
+  /* espaco entre os elementos*/
+  justify-content: center;
+  /* alinhamento atraves do eixo x*/
+  align-items: center;
+  /* alinhamento dos itens*/
+}
+p{
+  margin-top: 2rem;
+}
+ul{
+  margin-top: 4rem;
+  list-style: none;
+  /* remover as bolinhas*/
+  padding: 0%;
+  display: flex;
+  gap:0.5rem;
+  justify-content: center;
+}
